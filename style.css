@@ -1,0 +1,685 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+    background:#f8f5ef;
+    color:#333;
+}
+
+.hero{
+    height:100vh;
+
+    background-image:url("fotos/foto15.jpg.jpeg");
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.45);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    text-align:center;
+    color:white;
+
+    transform:translateY(180px);
+}
+
+.hero-content h1{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:4.3rem;
+
+    font-weight:600;
+
+    line-height:1.05;
+
+    max-width:950px;
+
+    margin:auto;
+
+    text-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.hero-content p{
+    margin-top:30px;
+    font-size:1.2rem;
+}
+
+.nasa{
+    padding:100px 20px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.nasa img{
+    width:90%;
+    max-width:900px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.texto{
+    margin-top:40px;
+    text-align:center;
+    max-width:700px;
+}
+
+.texto h2{
+    margin-bottom:20px;
+    font-size:2.5rem;
+}
+
+.texto p{
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.centro{
+    display:flex;
+    align-items:flex-start;
+
+    justify-content:center;
+
+    gap:80px;
+
+    padding:100px;
+
+    background:#fffdf8;
+}
+
+.centro-texto{
+    max-width:700px;
+}
+
+.centro-texto h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.centro-texto p{
+    font-size:1.2rem;
+    line-height:1.9;
+    margin-bottom:28px;
+}
+
+.centro img{
+    width:380px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    position:sticky;
+    top:100px;
+}
+
+section{
+    opacity:1;
+    transition:all 1.2s ease;
+}
+.galeria{
+    padding:100px 50px;
+    background:#f6f2eb;
+}
+
+.galeria h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:50px;
+}
+
+.fotos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:40px;
+
+    margin-top:50px;
+}
+
+.polaroid img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:6px;
+}
+.versiculo{
+    margin-top:50px;
+    padding:25px;
+
+    border-left:4px solid #d4b483;
+
+    font-style:italic;
+
+    background:#f8f5ef;
+}
+
+.versiculo h4{
+    margin-top:15px;
+}
+.nome{
+
+    margin-top:25px;
+
+    font-family:'Inter', sans-serif;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    font-size:0.85rem;
+
+    color:rgba(255,255,255,0.85);
+
+    font-weight:300;
+}
+.polaroid:nth-child(1){
+    transform:rotate(-5deg);
+}
+
+.polaroid:nth-child(2){
+    transform:rotate(4deg);
+}
+
+.polaroid:nth-child(3){
+    transform:rotate(-3deg);
+}
+
+.polaroid:nth-child(4){
+    transform:rotate(6deg);
+}
+
+.polaroid:nth-child(5){
+    transform:rotate(-4deg);
+}
+
+.polaroid:nth-child(6){
+    transform:rotate(3deg);
+}
+
+.polaroid:hover{
+    transform:scale(1.08) rotate(0deg);
+    z-index:10;
+}
+.polaroid{
+
+    background:white;
+
+    padding:12px;
+
+    width:280px;
+
+    border-radius:8px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.4s ease;
+}
+.polaroid p{
+
+    margin-top:15px;
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:1.3rem;
+
+    line-height:1.4;
+}
+.subtitulo-galeria{
+
+    text-align:center;
+
+    font-size:1.2rem;
+
+    max-width:700px;
+
+    margin:0 auto 50px auto;
+
+    color:#666;
+}
+.dicionario{
+
+    padding:120px 10%;
+    background:#fffdf8;
+}
+
+.titulo-dicionario{
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:3.5rem;
+
+    max-width:900px;
+
+    margin:0 auto 120px auto;
+}
+
+.palavra{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+    margin-bottom:120px;
+}
+
+.definicao{
+
+    max-width:700px;
+
+    padding-left:35px;
+
+    border-left:4px solid #d4b483;
+}
+.definicao span{
+
+    display:block;
+
+    margin-top:5px;
+    margin-bottom:15px;
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    color:#9b8765;
+}
+
+.definicao h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:5rem;
+
+    margin-bottom:10px;
+}
+
+.definicao span{
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    color:#888;
+}
+
+.definicao p{
+
+    margin-top:25px;
+
+    font-size:1.4rem;
+
+    line-height:2;
+}
+
+.polaroid-dicionario{
+
+    width:220px;
+
+    background:white;
+
+    padding:12px 12px 35px 12px;
+
+    border-radius:8px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+    transition:0.4s ease;
+}
+.polaroid-dicionario:nth-child(2){
+
+    transform:rotate(4deg);
+}
+
+.polaroid-dicionario:hover{
+
+    transform:rotate(0deg) scale(1.05);
+}
+
+.polaroid-dicionario img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:6px;
+}
+.futuro{
+
+    padding:120px 50px;
+
+    text-align:center;
+
+    background:#f6f2eb;
+}
+
+.futuro h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:4rem;
+}
+
+.futuro p{
+
+    margin-top:20px;
+
+    margin-bottom:60px;
+
+    font-size:1.3rem;
+}
+.grid-futuro{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,250px);
+
+    justify-content:center;
+
+    gap:30px;
+}
+.grid-futuro img,
+.vazio{
+
+    width:250px;
+    height:320px;
+
+    border-radius:15px;
+}
+.grid-futuro img{
+
+    object-fit:cover;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+}
+.vazio{
+
+    border:3px dashed #d4b483;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    font-size:1.3rem;
+
+    font-family:'Cormorant Garamond', serif;
+
+    color:#b89a67;
+}
+.progresso{
+
+    position:fixed;
+
+    right:30px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:60px;
+    height:350px;
+
+    z-index:9999;
+}
+
+.trilha{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:4px;
+    height:100%;
+
+    background:linear-gradient(
+        to bottom,
+        #e7d7bc,
+        #d4b483
+    );
+
+    border-radius:50px;
+}
+
+.cavalier{
+
+    position:absolute;
+
+    width:55px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    top:0;
+
+    transition:0.15s linear;
+
+    filter:drop-shadow(
+        0 5px 10px rgba(0,0,0,0.2)
+    );
+}
+section{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s ease;
+}
+
+section.aparecer{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+.galeria h2,
+.titulo-dicionario,
+.futuro h2,
+.centro-texto h2{
+
+    position:relative;
+}
+
+.galeria h2::after,
+.titulo-dicionario::after,
+.futuro h2::after,
+.centro-texto h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:120px;
+    height:3px;
+
+    background:#d4b483;
+
+    margin:15px auto 0 auto;
+
+    border-radius:20px;
+}
+section{
+
+    position:relative;
+}
+
+section::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-30px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:2px;
+    height:60px;
+
+    background:#d4b483;
+}
+.polaroid,
+.polaroid-dicionario{
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffffff,
+        #faf7f0
+    );
+}
+.tempo{
+
+    padding:150px 50px;
+
+    text-align:center;
+
+    background:#fffdf8;
+}
+
+.tempo h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:3.5rem;
+
+    margin-bottom:40px;
+}
+
+#contador{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:5rem;
+
+    color:#b89a67;
+
+    margin-bottom:25px;
+}
+
+.frase-tempo{
+
+    font-size:1.2rem;
+
+    color:#777;
+
+    max-width:600px;
+
+    margin:auto;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f8f5ef;
+  font-family: 'Cormorant Garamond', serif;
+  color: #555;
+  border-top: 2px solid #d4b483;
+}
+
+footer p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.versiculo-rodape {
+  max-width: 700px;
+  margin: 0 auto;
+  font-style: italic;
+  background: #fffdf8;
+  padding: 20px;
+  border-left: 4px solid #d4b483;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.versiculo-rodape p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.versiculo-rodape {
+  position: relative;
+  z-index: 2; /* fica acima das lanternas */
+}
+
+
+.versiculo-rodape h4 {
+  font-size: 1rem;
+  color: #9b8765;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+footer {
+  position: relative; /* necessário para posicionar lanternas */
+  overflow: hidden;   /* evita que elas saiam do rodapé */
+}
+
+.lanternas span {
+  position: absolute;
+  bottom: -60px;
+  width: 25px;
+  height: 40px;
+  background: #ffd27f; /* cor dourada */
+  border-radius: 8px;
+  opacity: 0.8;
+  animation: flutuar 10s linear infinite;
+  z-index: 1; /* atrás do versículo */
+}
+
+.lanternas span:nth-child(1) { left: 20%; animation-delay: 0s; }
+.lanternas span:nth-child(2) { left: 40%; animation-delay: 2s; }
+.lanternas span:nth-child(3) { left: 60%; animation-delay: 4s; }
+.lanternas span:nth-child(4) { left: 80%; animation-delay: 6s; }
+.lanternas span:nth-child(5) { left: 50%; animation-delay: 8s; }
+
+@keyframes flutuar {
+  0% { transform: translateY(0) scale(1); opacity: 0.8; }
+  50% { transform: translateY(-250px) scale(1.2); opacity: 1; }
+  100% { transform: translateY(-500px) scale(0.9); opacity: 0; }
+}
